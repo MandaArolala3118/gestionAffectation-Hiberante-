@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+ <class name="bean.Affectation" table="AFFECTATION">
+ 	<composite-id name="primaryKey" class="bean.AffectationPrimaryKey">
+ 		<key-property name="codeempl" column="codeempl" type="int"></key-property>
+ 		<key-property name="codelieu" column="codelieu" type="int"></key-property>
+ 	</composite-id>
+ 	<property name="date" column="date" length="10"></property>
+ </class>
+ 
+ </hibernate-mapping>

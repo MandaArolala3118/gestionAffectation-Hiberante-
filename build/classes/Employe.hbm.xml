@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+ <class name="bean.Employe" table="EMPLOYE">
+ 	<id name="codeempl" column="codeempl">
+ 		<generator class="increment"></generator>
+ 	</id>
+ 	
+ 	<property name="Nom" column="Nom" length="25"></property>
+ 	<property name="Prenom" column="Prenom" length="25"></property>
+ 	<property name="Poste" column="Poste" length="50"></property>
+ </class>
+ 
+ </hibernate-mapping>

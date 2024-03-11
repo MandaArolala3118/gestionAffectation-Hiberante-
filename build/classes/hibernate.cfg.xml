@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "E:/M1/hibernate/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+    <!-- Dialecte SQL spécifique à votre base de données -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Afficher les requêtes SQL dans la console -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Créer les tables automatiquement -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <mapping resource="Affectation.hbm.xml"/>
+
+        <mapping resource="Employe.hbm.xml"/>
+
+        <mapping resource="Lieu.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

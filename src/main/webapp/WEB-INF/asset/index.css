@@ -1,0 +1,239 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(240, 240, 240, 0.351);
+}
+button{
+    cursor: pointer;
+}
+#body{
+    width: 1350px;
+    padding: 20px;
+}
+#header{
+    width: 100%;
+    height: 50px;
+}
+.listeMenu{
+    float: left;
+
+}
+.buttonMenu{
+    width: 100px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    cursor: pointer;}
+.buttonMenu:hover{
+    background-color: rgba(128, 128, 128, 0.171);
+    cursor: pointer;
+}
+.research{
+    float: right;
+}
+.inputSearch{
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(104, 104, 104);
+}
+.inputSearch:focus{
+    outline: none;
+}
+#employee{
+
+}
+#employeeContent{
+    float: left;
+}
+.titlePage{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(52, 51, 51);
+}
+.codeTable{
+    width: 75px;
+}
+.nameTable{
+    width: 200px;
+}
+.lastNameTable{
+    width: 200px;
+}   
+.postTable{
+    width: 200px;
+}
+.buttonTable{
+    width: 170px;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 10px;
+
+}
+th{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: lighter;
+    font-size: large;
+}
+tr:nth-child(even) {background-color: #f0f0f0;}
+.modifyButton{
+    background-color: green;
+    padding: 10px;
+    width: 80px;
+    border: 1px solid gray;
+    color: white;
+}
+.deleteButton{
+    background-color: rgb(128, 43, 0);
+    padding: 10px;
+    width: 80px;
+    border: 1px solid gray;
+    color: white;
+}
+#addContent{
+    float: right;    
+    margin-top: 70px;
+    width: 315px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.titleAdd{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 25px;
+}
+#addContent input, .modifyContent input{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(104, 104, 104);
+    margin-top: 20px;
+    
+}
+#addContent input:focus, .modifyContent input:focus{
+    outline: none;    
+    background-color: rgba(227, 227, 227, 0.385);
+    border-bottom: 2px solid rgb(104, 104, 104);
+}
+#addContent label, .modifyContent label{
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.inputLabelList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.codeEmployeeTitle{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.addButton{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+#validationDiv
+{
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    top: 10px;
+    right: auto;
+    left: auto;
+    width: 200px;
+    padding: 20px;
+    border-bottom: 3px solid green;
+    box-shadow: 5px 5px 15px 5px rgba(128, 128, 128, 0.473);
+}
+#modify{
+    background-color: rgba(128, 128, 128, 0.588);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.modifyContent, .deleteConfirmationContent{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.exit{
+    float: right;
+    margin-top: -50px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.x{
+    transform: rotate(135deg);
+    border-bottom: 3px solid ;
+    width: 20px;
+}
+.y{
+    transform: rotate(45deg);
+    border-bottom: 3px solid ;
+    width: 20px;
+}
+#deleteConfirmation{
+    background-color: rgba(128, 128, 128, 0.588);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+#deleteConfirmation span{
+    font-weight: bold;
+}
+.deleteConfirmationContent .exit{
+    margin-top: 0;
+}
+.deleteConfirmationContent p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.buttonConfirmation{
+    float: right;
+    margin-top: 15px;
+}
+.cancelButton{
+    width: 100px;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+.confirmeButton{
+    width: 100px;
+    color: white;
+    background-color: rgb(2, 2, 46);
+    border: none;
+    padding: 10px;
+}
+.obligate{
+    color: red;
+}
